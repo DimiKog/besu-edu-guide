@@ -14,14 +14,12 @@
       padding: 0;
       line-height: 1.6;
     }
-
     header {
       text-align: center;
       padding: 2rem 1rem 1rem;
       background: linear-gradient(90deg, #0ea5e9, #2563eb);
       color: white;
     }
-
     .logo-bar {
       display: flex;
       justify-content: center;
@@ -29,16 +27,11 @@
       gap: 24px;
       margin-bottom: 1rem;
     }
-
     .logo-bar img {
       height: 60px;
       filter: drop-shadow(0 0 3px rgba(0,0,0,0.2));
     }
-
-    header h1 {
-      margin: 0.5rem 0 0;
-      font-size: 2rem;
-    }
+    header h1 { margin: 0.5rem 0 0; font-size: 2rem; }
 
     .container {
       display: grid;
@@ -48,7 +41,6 @@
       max-width: 1200px;
       margin: auto;
     }
-
     .card {
       background: #111827;
       border-radius: 16px;
@@ -56,30 +48,11 @@
       box-shadow: 0 0 10px rgba(0,0,0,0.4);
       transition: transform 0.2s, box-shadow 0.2s;
     }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 4px 16px rgba(59,130,246,0.4);
-    }
-
-    h2 {
-      color: #38bdf8;
-      margin-top: 0;
-    }
-
-    ol, ul {
-      padding-left: 1.2rem;
-    }
-
-    a {
-      color: #38bdf8;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 4px 16px rgba(59,130,246,0.4); }
+    h2 { color: #38bdf8; margin-top: 0; }
+    ol, ul { padding-left: 1.2rem; }
+    a { color: #38bdf8; text-decoration: none; font-weight: 500; }
+    a:hover { text-decoration: underline; }
 
     footer {
       text-align: center;
@@ -89,7 +62,6 @@
       border-top: 1px solid #1f2937;
       margin-top: 2rem;
     }
-
     .footer-avatar {
       width: 90px;
       height: 90px;
@@ -99,33 +71,25 @@
       margin-bottom: 0.5rem;
       transition: transform 0.3s ease;
     }
-
-    .footer-avatar:hover {
-      transform: scale(1.05);
-    }
-
+    .footer-avatar:hover { transform: scale(1.05); }
     .footer-logos {
       display: flex;
       justify-content: center;
       gap: 18px;
       margin-top: 1rem;
     }
-
     .footer-logos img {
       height: 35px;
       opacity: 0.7;
       transition: opacity 0.3s ease;
     }
-
-    .footer-logos img:hover {
-      opacity: 1;
-    }
+    .footer-logos img:hover { opacity: 1; }
   </style>
 </head>
 <body>
   <header>
     <div class="logo-bar">
-      <img src="assets/logos/Uniwa_logo.png" alt="UniWA Logo">
+      <img src="assets/logs/Uniwa_logo.png" alt="UniWA Logo">
       <img src="assets/logos/besuLogo.svg" alt="Besu Logo">
       <img src="assets/logos/metamaskLogo.svg" alt="MetaMask Logo">
     </div>
@@ -133,16 +97,51 @@
     <p>Εγκατάσταση MetaMask · Σύνδεση Δικτύου · Mint NFT</p>
   </header>
 
-  <!-- Κεντρικό περιεχόμενο (cards) εδώ -->
+  <!-- Οδηγίες (3 κάρτες) -->
   <section class="container">
-    <!-- Οι κάρτες σου παραμένουν όπως πριν -->
+    <div class="card">
+      <h2>🦊 1. Εγκατάσταση MetaMask</h2>
+      <ol>
+        <li>Μεταβείτε στο <a href="https://metamask.io" target="_blank">metamask.io</a> και πατήστε <strong>Download</strong>.</li>
+        <li>Εγκαταστήστε την επέκταση στο Chrome / Firefox / Edge.</li>
+        <li>Επιλέξτε <strong>Create a new wallet</strong> και αποθηκεύστε τη φράση ανάκτησης.</li>
+        <li>Μην τη μοιραστείτε με κανέναν – είναι το “κλειδί” σας στο blockchain.</li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <h2>🧩 2. Προσθήκη Δικτύου Besu EduNet</h2>
+      <ol>
+        <li>Ανοίξτε το MetaMask → <strong>Settings → Networks → Add network manually</strong>.</li>
+        <li>Συμπληρώστε:</li>
+      </ol>
+      <ul>
+        <li><b>Network Name:</b> QBFT Besu EduNet</li>
+        <li><b>RPC URL:</b> https://rpc.dimikog.org/rpc/</li>
+        <li><b>Chain ID:</b> 424242</li>
+        <li><b>Currency Symbol:</b> EDU-D</li>
+        <li><b>Block Explorer:</b> https://blockexplorer.dimikog.org</li>
+      </ul>
+      <p>Πατήστε <strong>Save</strong> και επιβεβαιώστε ότι το MetaMask εμφανίζει το δίκτυο “Besu EduNet”.</p>
+    </div>
+
+    <div class="card">
+      <h2>🪙 3. Mint του Course Starter NFT</h2>
+      <ol>
+        <li>Μεταβείτε στη σελίδα mint:  
+          <a href="https://besu.dimikog.org/welcome-nft" target="_blank">https://besu.dimikog.org/welcome-nft</a></li>
+        <li>Πατήστε <strong>Connect Wallet</strong> → επιλέξτε MetaMask.</li>
+        <li>Πατήστε <strong>Mint NFT</strong> και περιμένετε επιβεβαίωση συναλλαγής.</li>
+        <li>Ελέγξτε το NFT σας στο <a href="https://explorer.dimikog.org" target="_blank">Blockscout</a> ή μέσα από το MetaMask.</li>
+      </ol>
+      <p><em>Αυτό το NFT λειτουργεί ως ψηφιακή απόδειξη συμμετοχής στο μάθημα Υπολογιστικά συστήματα υψηλών επιδόσεων για εφαρμογές blockchain.</em></p>
+    </div>
   </section>
 
   <footer>
     <img src="assets/logos/dimi.webp" alt="Δρ. Δημήτρης Γ. Κόγιας" class="footer-avatar">
     <p>Σελίδα σχεδιασμένη από τον <strong>Δρ. Δημήτρη Γ. Κόγια</strong></p>
-    <p>© 2025 Blockchain Lab – Πανεπιστήμιο Δυτικής Αττικής</p>
-
+    <p>© 2025 LCIIS Lab – Πανεπιστήμιο Δυτικής Αττικής</p>
     <div class="footer-logos">
       <img src="assets/logos/Uniwa_logo.png" alt="UniWA Logo">
       <img src="assets/logos/besuLogo.svg" alt="Besu Logo">
