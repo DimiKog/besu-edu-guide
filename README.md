@@ -1,3 +1,8 @@
+
+![GitHub Pages](https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-1f425f.svg)
+![Built with](https://img.shields.io/badge/Built%20with-Hyperledger%20Besu-blue.svg)
+![License](https://img.shields.io/badge/License-CC--BY--NC%204.0-green.svg)
+
 # 🧩 Οδηγός Besu EduNet
 
 Ο **Οδηγός Besu EduNet** παρέχει στους φοιτητές του μαθήματος *Υπολογιστικά συστήματα υψηλών επιδόσεων για εφαρμογές blockchain* του Πανεπιστημίου Δυτικής Αττικής (ΠΑΔΑ) αναλυτικές οδηγίες για:
